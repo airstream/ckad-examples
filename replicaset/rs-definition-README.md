@@ -17,4 +17,4 @@ $ kubectl delete replicaset myapp-replicaset
 
 $ kubectl replace -f rs-definition.yml
 
-$ kubectl scale -replicas=6 -f myapp-replicaset
+$ kubectl scale rs myapp-replicaset --replicas=6
