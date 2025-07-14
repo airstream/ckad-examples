@@ -11,5 +11,6 @@ $ kubectl get replicasets
 
 $ kubectl get pods
 
-# show status of all objects
+> show status of all objects
+
 $ kubectl get all
