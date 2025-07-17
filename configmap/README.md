@@ -8,7 +8,7 @@ Flow:
 
 **Imperative way**
 
-$ kubectl create configmap app-config --from-literar=NAME=test
+$ kubectl create configmap app-config --from-literal=NAME=test
 
 $ kubectl create configmap app-configg --from-file=app_config.properties
 
