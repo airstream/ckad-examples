@@ -9,8 +9,9 @@ spec:
   containers:
     - name: nginx-container
       image: nginx
-      env: NAME
-      valueFrom:
-        - configMapKeyRef:
-          name: app-config
-          key: NAME
+      env: 
+        - name: NAME
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: NAME
