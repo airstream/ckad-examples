@@ -20,7 +20,8 @@ $ kubectl create -f secret.yml
 
 $ kubectl get db-secret
 
-> get values in base64 format 
+> get values in base64 format
+
 $ k get secret db-secret -o yaml
 
 > describe
