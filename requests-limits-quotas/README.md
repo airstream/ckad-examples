@@ -1,4 +1,4 @@
-## requests-limits
+## requests-limits-quotas
 ---
 ```yaml
 apiVersion: v1
@@ -19,3 +19,4 @@ spec:
           memory: "128Mi"
           cpu: "1"
 ```
+
