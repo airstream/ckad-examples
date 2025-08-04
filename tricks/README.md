@@ -21,3 +21,21 @@ kubectl create deployment --image=nginx nginx --dry-run -o yaml > nginx-deployme
 > - -o name Print only the resource name and nothing else.
 > - -o wide Output in the plain-text format with any additional information.
 > - -o yaml Output a YAML formatted API object.
+
+## Logs
+
+> watch
+
+kubectl -n elastic exec -it app -- cat /var/log/messages
+
+kubectl logs app -n elastic
+
+## Edit existing pod
+
+kubectl edit pod
+
+## Replace (recreate)
+
+> recreate pod
+
+kubectl replace --force -f /tmp/manifest.yml
