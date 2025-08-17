@@ -46,4 +46,5 @@ kubectl replace --force -f /tmp/manifest.yml
 
 kubectl get pods --selector dev=test
 
-kubectl get pods --selector dev=test,dep=finance --no-headers
+kubectl get all --selector dev=test,dep=finance --no-headers
+
