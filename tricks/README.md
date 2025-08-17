@@ -39,3 +39,11 @@ kubectl edit pod
 > recreate pod
 
 kubectl replace --force -f /tmp/manifest.yml
+
+## Selectors
+
+> show
+
+kubectl get pods --selector dev=test
+
+kubectl get pods --selector dev=test,dep=finance --no-headers
